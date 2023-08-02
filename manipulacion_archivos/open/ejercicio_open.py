@@ -1,3 +1,14 @@
+import os
+
+file_txt = open("manipulacion_archivos/pruebas/aprendiendo_open.txt", "w+")
+
+file_txt.write("Hola, mi nombre es Harold Steven Sabogal Perez\n"
+               "Mi numero de celular es: 3143442062\n"
+               "Mi correo electronico es: haroldsabogal48@gmail.com\n"
+                "Estudio en el Sena el programada de Analisis y Desarrollo de Software")
+
+file_txt.close()
+
 def contar_lines(file):
     count = 0
     read_txt = open(file,"r")
@@ -24,5 +35,7 @@ def contar_caracteres(file):
         print("No tiene caracteres  ")
     read_txt.close()
 
-contar_lines("Aprendiendo.txt")
-contar_caracteres("Aprendiendo.txt")
+contar_lines("manipulacion_archivos/pruebas/aprendiendo_open.txt")
+contar_caracteres("manipulacion_archivos/pruebas/aprendiendo_open.txt")
+
+# os.remove("manipulacion_archivos/pruebas/aprendiendo_open.txt")
