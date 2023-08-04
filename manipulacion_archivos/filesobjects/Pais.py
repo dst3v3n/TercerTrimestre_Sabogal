@@ -7,6 +7,7 @@ class Pais:
         self.__pib = Pib
         self.__nominal = Nominal
         self.__caracter = 0
+        self.__promedio = 0
     
     def getNombre (self):
         return self.__nombre
@@ -22,49 +23,50 @@ class Pais:
         
     def caracter (self , file:str, indice:int):
         caracter = 0
+        lista = []
 
         with open(file , encoding="utf-8" ) as file_csv:
             csv_read = csv.reader(file_csv)
 
             for row in csv_read:
                 indices = row [indice]
-                for  i in indices:
+                lista.append (indices)
+                for i in indices:
                     caracter += 1
+                    
         
         self.__caracter = caracter
         with open("manipulacion_archivos/pruebas/caracters.txt" ,"a") as new_file:
-            new_file.write (f"La columna del indice {indice} tiene {caracter} caracteres\n")
-        print(f"El indice {indice} tiene {caracter} caracteres")
+            new_file.write (f"La columna del indice {lista[0]} tiene {caracter} caracteres\n")
+        print(f"El indice {lista[0]} tiene {caracter} caracteres")
 
     def Promedio (self,file:str):
-        x = int(input("Digita la columna que quieres hayar el promedio: "))
+        try:
+            x = int(input("Digita la columna que quieres hayar el promedio: "))
 
-        multiplication = 0
-        division = 0
-        lista = []
-        lista_modify = []
+            suma = 0
+            division = 0
+            lista = []
 
-        with open (file , encoding="utf-8") as file_csv:
+            with open (file , encoding="utf-8") as file_csv:
 
-            read_csv = csv.reader(file_csv)
-            if x == 10 :
+                read_csv = csv.reader(file_csv)
                 for row in read_csv:
-                    lista.append(row[x])
-                lista.pop(0)
-                lista.pop(0)
-            else:
-                lista.pop(0)
-                for row in read_csv:
-                    lista.append(row)   
+                    if not(row[x] == ""):
+                        lista.append(row[x])
+                y = lista.pop(0)
+                
+                for i in lista:
+                    n = i.replace("," , ".") 
+                    suma += float(n)
 
-            for i in lista:
-                q = i.replace("," , ".")
-                y = float(q)
-                lista_modify.append(y)
-        print(lista_modify)
-            
+            division = suma / len(lista)
+            self.__promedio = division
 
-        print(len(lista_modify))
-        print(multiplication)
-        division = multiplication / len(lista_modify)
-        print(division)
+            with open("manipulacion_archivos/pruebas/caracters.txt" ,"a") as new_file:
+                new_file.write (f"El promedio del indice {y} es de: {division}\n")
+                                
+            print (f"El promedio del indice {y} es de: {division}")
+
+        except ValueError:
+            print("No se puede sacar el promedio con valores de tipo string (cadena)")

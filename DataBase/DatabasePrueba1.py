@@ -52,7 +52,7 @@ formacion='adso'
 genero='m'
 
 
-# query ="INSERT INTO brands (name) VALUES ('"+ name  +"','"+  doc+"','"+formacion+"','"+genero+"')"#El signo mas es para 
+# query ="INSERT INTO brands (name) VALUES ('"+ name  +"','"+  doc+"','"+formacion+"','"+genero+"')"#El signo mas es para concatenar
 # cursor.execute(query)
 # database.commit()
 
