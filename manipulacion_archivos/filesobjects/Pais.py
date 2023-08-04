@@ -58,7 +58,6 @@ class Pais:
                     lista.append(row)   
 
             for i in lista:
-                print(i)
                 q = i.replace("," , ".")
                 y = float(q)
                 lista_modify.append(y)
