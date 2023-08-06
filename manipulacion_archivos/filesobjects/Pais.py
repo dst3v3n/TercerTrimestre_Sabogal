@@ -69,9 +69,6 @@ class Pais:
                     listmodify.append(numero)
                     numero = ""
                     listax = []
-                    
-
-                
                 # for i in lista:
                 #     n = i.replace("," , ".") 
                 #     suma += float(n)
