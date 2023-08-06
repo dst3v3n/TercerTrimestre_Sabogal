@@ -44,9 +44,11 @@ class Pais:
         try:
             x = int(input("Digita la columna que quieres hayar el promedio: "))
 
-            suma = 0
-            division = 0
+            suma1 = 0
             lista = []
+            listax = []
+            listmodify = []
+            numero = ""
 
             with open (file , encoding="utf-8") as file_csv:
 
@@ -57,16 +59,36 @@ class Pais:
                 y = lista.pop(0)
                 
                 for i in lista:
-                    n = i.replace("," , ".") 
-                    suma += float(n)
+                    for h in i:
+                        if h != ",":
+                            listax.append (h)
+                        elif h == ",":
+                            listax.append (".")
+                    for i in listax:
+                        numero = str(numero) + str(i)
+                    listmodify.append(numero)
+                    numero = ""
+                    listax = []
+                    
 
-            division = suma / len(lista)
-            self.__promedio = division
+                
+                # for i in lista:
+                #     n = i.replace("," , ".") 
+                #     suma += float(n)
 
-            with open("manipulacion_archivos/pruebas/caracters.txt" ,"a") as new_file:
-                new_file.write (f"El promedio del indice {y} es de: {division}\n")
+             
+                for i in listmodify:
+                    suma1 += float(i)
+
+            division1 = suma1 / len(lista)   
+            # division = suma / len(lista)
+            self.__promedio = division1
+
+            with open("manipulacion_archivos/pruebas/promedio.txt" ,"a") as new_file:
+                new_file.write (f"El promedio del indice {y} es de: {division1}\n")
                                 
-            print (f"El promedio del indice {y} es de: {division}")
+            # print (f"El promedio del indice {y} es de: {division} lista modificada")
+            print (f"El promedio del indice {y} es de: {division1}")
 
         except ValueError:
             print("No se puede sacar el promedio con valores de tipo string (cadena)")

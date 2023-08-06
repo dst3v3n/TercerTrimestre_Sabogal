@@ -4,7 +4,7 @@ database = mysql.connector.connect (
     host = "localhost",
     user = "root",
     password = "",
-    database = "comercializadora"
+    database = "ecommerce_harold_sabogal"
 )
 
 cursor = database.cursor ()
@@ -45,19 +45,12 @@ cursor.execute ("SELECT * FROM products")
 for select in cursor:
     print(select)
 
-
-name="Alirio Suarez"
-doc='909997'
-formacion='adso'
-genero='m'
-
-
-# query ="INSERT INTO brands (name) VALUES ('"+ name  +"','"+  doc+"','"+formacion+"','"+genero+"')"#El signo mas es para concatenar
+# name = "Harold Sabogal"
+# query ="INSERT INTO brands (name) VALUES ('"+ name  +"')" #El signo mas es para concatenar
 # cursor.execute(query)
 # database.commit()
 
-print("'"+ name  +"','"+  doc+"','"+formacion+"','"+genero+"'")
-
+print("----------------------------------------------------------------------")
 cursor.execute ("SELECT * FROM brands")
 
 for select in cursor:

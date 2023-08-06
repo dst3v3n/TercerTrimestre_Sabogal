@@ -17,9 +17,8 @@ for apr in listaPais:
     print(f"Pib del pais:  {apr.getPib()}")
     print(f"Nominal del pais: {apr.getNominal()}\n")
 
-x = int(input("Digita el indice: "))
-ob.caracter ("C:\\Users\\PERSONAL\\Downloads\\pais.csv" , x)
+# x = int(input("Digita el indice: "))
+# ob.caracter ("C:\\Users\\PERSONAL\\Downloads\\pais.csv" , x)
 # ob.caracter ("C:\\Users\\SENA\\Downloads\\pais.csv" , x)
 ob.Promedio("C:\\Users\\PERSONAL\\Downloads\\pais.csv")
 # ob.Promedio("C:\\Users\\SENA\\Downloads\\pais.csv")
-
