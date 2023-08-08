@@ -7,6 +7,7 @@
 ## Aprendiendo los fundamentos de Python
 
 ### El proyecto lo estoy realizando en el SENA. Estoy estudiando un tecnologo en Analisis y Desarrollo de Software (ADSO) :green_heart:
+<br>
 
 --------
 
@@ -15,6 +16,10 @@
 * [Excepciones](./excepciones/ejercicioexp1.py)
 * [Manipulación Archivos](./manipulacion_archivos)
 * [DataBases](./DataBase)
+  
+<br>
+<br>
+<br>
 
 --------
 ## **Ultimos codigos realizados** :green_heart:
