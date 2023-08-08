@@ -1,6 +1,7 @@
 # TercerTrimestre_Sabogal
 
-[![Python](https://img.shields.io/badge/Python-1.11.3+-00B894?style=for-the-badge&logo=python&logoColor=00B894&labelColor=black)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-1.11.3+-00B894?style=for-the-badge&logo=python&logoColor=00B894&labelColor=black)](https://www.mysql.com/)
+[![DataBase](https://img.shields.io/badge/MySQL-1.11.3+-00B894?style=for-the-badge&logo=MySQL&logoColor=00B894&labelColor=black)](https://www.python.org/)
 [![Visual-Studio-Code](https://img.shields.io/badge/visual_studio_code-1.78+-00B894?style=for-the-badge&logo=visual-studio-code&logoColor=00B894&labelColor=black)](https://code.visualstudio.com/)
 
 ## Aprendiendo los fundamentos de Python
