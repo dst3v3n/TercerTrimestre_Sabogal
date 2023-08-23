@@ -1,0 +1,58 @@
+/* estilos para colores */
+.colores {
+    color: red;
+}
+
+.colores-hexadecimal {
+    color: #627264;
+}
+
+.colores-rgb {
+    color: rgb(100, 0, 200);
+}
+
+.colores-rgba {
+    color: rgba(10, 10, 10, 0.2);
+}
+
+/* fondos */
+
+.fondo {
+    /* width: 500px; */
+    /* height: 300px; */
+    /* background-color: #627264 ;   */
+    background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-8.jpg");
+    background-position: left bottom;
+}
+
+.fondo-interno {
+    /* width: 500px; */
+    /* height: 300px; */
+    /* background-color: #627264 ;   */
+    background-image: url("./imagenes/fondo.avif");
+    background-position: left center;
+}
+
+/* tamaños */
+
+.ancho {
+    background-color: #627264;
+    width: 100px;
+}
+
+.alto {
+    background-color: darkkhaki;
+    height: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(105,150,150);
+    border-width: 1px;
+    /* border-top: none; */
+    padding: 10px 20px;
+    /* padding: 10px 20px 30px 40px; */
+    margin: 10px 20px;
+    /* margin: 10px 20px 30px 40px; */
+    
+}

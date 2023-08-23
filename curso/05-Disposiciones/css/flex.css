@@ -1,0 +1,32 @@
+.flex {
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.contenido1 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido2 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido3 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
