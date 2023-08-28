@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.domino {
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ficha {
+    background-color: antiquewhite;
+    width: 300px;
+    height: 220px;
+    position: relative;
+}
+
+.circulo {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circulo1 {
+    margin: 30px 50px;
+}
+
+.circulo2 {
+    margin: 30px 200px;
+}
+
+.circulo3 {
+    margin: 90px 50px;
+}
+
+.circulo4 {
+    margin: 90px 200px;
+}
+
+.circulo5 {
+    margin: 150px 50px;
+}
+
+.circulo6 {
+    margin: 150px 200px;
+}
+
+.domino .ficha p {
+    margin: 280;
+}
+
+.ficha2 {
+    background-color: antiquewhite;
+    width: 300px;
+    height: 220px;
+    position: relative;
+    margin-top: 10px;
+}
