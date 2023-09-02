@@ -9,12 +9,22 @@ body {
     background-color: #001123;
 }
 
+.inicio {
+    color: #FF5F45;
+}
+
 .container {
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.333) 0px 1px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #001123;
+    z-index: 100;
 }
 
 .container p {
@@ -32,7 +42,6 @@ body {
 .links a {
     font-size: 15pt;
     text-decoration: none;
-    /* color: white; */
     padding: 0px 15px;
 }
 
@@ -42,13 +51,17 @@ main h1 {
 }
 
 .main {
-    margin: 200px 200px;
-    /* width: 250px; */
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    margin: 0px 0px 0px 200px;
+    justify-content: start;
+    align-items: center;
 }
 
 
 .presentacion h1 {
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     font-size: 53pt;
 }
 
@@ -74,53 +87,72 @@ main h1 {
 .presentacion .na .nombre {
     background-color: #FF5F45;
     font-size: 11pt;
+    position: absolute;
 }
 
 .presentacion p {
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .presentacion button {
     display: flex;
-    margin: 20px 0px;
+    margin: 40px 0px;
     border: none;
     cursor: pointer;
 }
 
-.btn-curriculum {
-    box-sizing: border-box;
-    background-color: #FF5F45;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
-
-.btn-curriculum p {
-    font-size: 12pt;
-}
-
-.btn-curriculum img {
-    margin-right: 5px;
-}
-
-.presentacion .btn-proyectos {
+.presentacion .btn-curriculum {
     box-sizing: border-box;
     background-color: transparent;
-    padding: 0px 60px 0px 60px;
+    padding: 0px 50px 0px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     border-style: solid;
-    border-color: white;
+    border-color: #FF5F45;
     border-width: 2px;
+    height: 49px;
+    position: relative;
+    z-index: 1;
+    margin-right: 60px;
+}
+
+.btn-curriculum p {
+    font-size: 12pt;
+    position: relative;
+}
+
+.presentacion .btn-curriculum img {
+    margin-right: 5px;
+    position: relative;
+}
+
+.presentacion .btn-proyectos {
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0px 65px 0px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FF5F45;
+    border-width: 2px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.presentacion .btn a {
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
 }
 
 .presentacion .btn-proyectos p {
     font-size: 12pt;
+    position: relative;
 }
 
 .btn {
@@ -128,16 +160,166 @@ main h1 {
     display: flex;
     width: 470px;
     justify-content: space-between;
+    position: relative;
 }
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    height: 70vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 500px;
+}
 
-.presentacion .btn-proyectos:hover {
+.about_me_section {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 72px;
+    margin-right: 80px;
+}
+
+.color {
+    color: #FF5F45;
+}
+
+.about_me_section-2 {
+    margin-top: 90px;
+}
+
+.logos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+}
+
+.logo {
+    display: flex;
+    margin-top: 7px;
+}
+
+.logo p {
+    margin-left: 10px;
+}
+
+.izquierda {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+    width: 700px;
+    align-items: flex-end;
+    margin-right: 200px;
+}
+
+.git {
+    margin-right: 144px;
+}
+
+.about_me_section p{
+    line-height: 24px;
+}
+
+.pie p{
+    color: #FF5F45;
+    font-size: 40pt;
+}
+
+.pie {
+    height: 100px;
+    width: 98.9%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.links a:hover{
+    transition: 7ms;
+    color: #FF5F45;
+}
+
+.presentacion .na ::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
     background-color: #FF5F45;
-    border: 2px solid #FF5F45 ;
+    animation: showRight 10s ease-in-out infinite;
+    animation-delay: .4s;
 }
 
-.presentacion .btn-curriculum:hover {
-    padding: 8px 27px;
-    background-color: #001123;
-    border: 2px solid white;
+.btn .btn-curriculum:nth-child(2){
+    background: transparent;
+    color: white;
+}
+
+.btn .btn-curriculum::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FF5F45;
+    transition: .5s;;
+    border-radius: 10px;
+}
+
+.btn .btn-curriculum:hover::before{
+    width: 100%;
+}
+
+.btn .btn-proyectos:nth-child(2){
+    background: transparent;
+    color: white;
+}
+
+.btn .btn-proyectos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FF5F45;
+    transition: .5s;;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn .btn-proyectos:hover::before{
+    width: 100%;
+}
+
+
+
+@keyframes showRight {
+    25% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    75% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
