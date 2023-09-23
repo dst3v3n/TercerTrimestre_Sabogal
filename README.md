@@ -1,12 +1,14 @@
 # TercerTrimestre_Sabogal
 
-[![Python](https://img.shields.io/badge/Python-1.11.3+-00B894?style=for-the-badge&logo=python&logoColor=00B894&labelColor=black)](https://www.mysql.com/)
-[![DataBase](https://img.shields.io/badge/MySQL-1.11.3+-00B894?style=for-the-badge&logo=MySQL&logoColor=00B894&labelColor=black)](https://www.python.org/)
-[![Visual-Studio-Code](https://img.shields.io/badge/visual_studio_code-1.78+-00B894?style=for-the-badge&logo=visual-studio-code&logoColor=00B894&labelColor=black)](https://code.visualstudio.com/)
+[![Python](https://img.shields.io/badge/Python-1.11.3+-F23545?style=for-the-badge&logo=python&logoColor=F23545&labelColor=black)](https://www.mysql.com/)
+[![DataBase](https://img.shields.io/badge/MySQL-1.11.3+-F23545?style=for-the-badge&logo=MySQL&logoColor=F23545&labelColor=black)](https://www.python.org/)
+[![HTML](https://img.shields.io/badge/html-5+-F23545?style=for-the-badge&logo=html5&logoColor=F23545&labelColor=black)]()
+[![HTML](https://img.shields.io/badge/css-3+-F23545?style=for-the-badge&logo=css3&logoColor=F23545&labelColor=black)]()
+[![Visual-Studio-Code](https://img.shields.io/badge/visual_studio_code-1.78+-F23545?style=for-the-badge&logo=visual-studio-code&logoColor=F23545&labelColor=black)](https://code.visualstudio.com/)
 
 ## Aprendiendo los fundamentos de Python
 
-### El proyecto lo estoy realizando en el SENA. Estoy estudiando un tecnologo en Analisis y Desarrollo de Software (ADSO) :green_heart:
+### El proyecto lo estoy realizando en el SENA. Estoy estudiando un tecnologo en Analisis y Desarrollo de Software (ADSO) :heart:
 <br>
 
 --------
@@ -16,13 +18,14 @@
 * [Excepciones](./excepciones/ejercicioexp1.py)
 * [Manipulación Archivos](./manipulacion_archivos)
 * [DataBases](./DataBase)
-  
+* [Cuso HTML5 y CSS3](./curso/)
+* [Portafolio Developer](./Portafolio/html/index.html) 
 <br>
 <br>
 <br>
 
 --------
-## **Ultimos codigos realizados** :green_heart:
+## **Ultimos codigos realizados** :heart:
 
 >Conexión con la base de datos
 
@@ -89,20 +92,13 @@ for select in cursor:
 
 
 
-------
-## Seguire aprendiendo mas acerca del mundo de **python!**. Este es solo el principio:green_heart:
-
 --------
-#### Puedes apoyar mi trabajo haciendo "☆ Star" en el repo. ¡Gracias!
 
- ### Hola, mi nombre es Harold Sabogal.
-### Estudiante del SENA
+### Hola, mi nombre es Steven Sabogal.
 
-![GitHub Followers](https://img.shields.io/github/followers/dst3v3n?style=social)
-![GitHub Followers](https://img.shields.io/github/stars/dst3v3n?style=social)
 
 Soy estudiante del SENA desde hace dos año. Este años estoy aprendiendo sobre Analisis y Desarrollo de Software (ADSO) como lo he comentado anteriormente. Quiero seguir aprendiendo mas sobre el mundo del Desarrollo de software **[@dst3v3n](https://github.com/dst3v3n)**.
 
 ### En mi perfil de GitHub tienes más información
 
-[![Web](https://img.shields.io/badge/Guthub-dst3v3n-00B894?style=for-the-badge&logo=github&logoColor=00B894&labelColor=black)](https://github.com/dst3v3n)
+[![Web](https://img.shields.io/badge/Guthub-dst3v3n-F23545?style=for-the-badge&logo=github&logoColor=F23545&labelColor=black)](https://github.com/dst3v3n)
