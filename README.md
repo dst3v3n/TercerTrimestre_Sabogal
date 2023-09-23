@@ -21,8 +21,7 @@
 * [Cuso HTML5 y CSS3](./curso/)
 * [Portafolio Developer](./Portafolio/html/index.html) 
 <br>
-<br>
-<br>
+
 
 --------
 ## **Ultimos codigos realizados** :heart:
